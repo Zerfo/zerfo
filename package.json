@@ -1,0 +1,19 @@
+{
+  "name": "zerfo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerfo/zerfo.git"
+  },
+  "author": "Nikolay Smekalin <nikolay.smekalin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zerfo/zerfo/issues"
+  },
+  "homepage": "https://github.com/Zerfo/zerfo#readme"
+}
