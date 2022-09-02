@@ -17,5 +17,12 @@
     "sourceMap": true,
     "outDir": "dist",
     "emitDeclarationOnly": true,
-  }
+    "paths": {
+      "@src/*": ["./*"],
+      "@utils": ["./utils"],
+      "@utils/*": ["./utils/*"],
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "jest.config.ts", "babel.config.ts"],
 }

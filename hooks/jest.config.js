@@ -12,5 +12,10 @@ module.exports = {
   transform: {
     '.(js|jsx|ts|tsx)$': 'ts-jest'
   },
-  reporters: ['default', ['jest-junit', { suiteName: 'jest tests' }]]
+  reporters: ['default', ['jest-junit', { suiteName: 'jest tests' }]],
+  moduleNameMapper: {
+    '^@src/(.*)$': '<rootDir>/$1',
+    "^@utils/(.*)$": '<rootDir>/utils/$1',
+    "^@utils$": '<rootDir>/utils',
+  }
 };
