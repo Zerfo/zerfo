@@ -1,0 +1,7 @@
+src/coverage
+dist
+lib
+
+.npmrc
+junit.xml
+
