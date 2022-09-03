@@ -12,7 +12,8 @@
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest -c=jest.config.js --silent",
-    "test:w": "jest -c=jest.config.js --watch"
+    "test:w": "jest -c=jest.config.js --watch",
+    "lint": "eslint --fix --ext '**/*.{ts,tsx,js,jsx}' src/"
   },
   "author": "Nikolay Smekalin <nikolay.smekalin@gmail.com>",
   "license": "MIT",
@@ -32,9 +33,11 @@
     "@types/react-router-dom": "5.3.3",
     "babel-jest": "29.0.1",
     "babel-loader": "8.2.5",
+    "eslint": "8.23.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.4.7",
     "jest-junit": "13.0.0",
+    "prettier": "2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rollup": "2.79.0",
