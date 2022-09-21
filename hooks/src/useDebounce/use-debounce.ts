@@ -9,7 +9,7 @@ export const useDebounce = <A extends any[]>(
 ): TUseDebounceReturn => {
   const ready = useRef<boolean | null>(false);
   const timeout = useRef<ReturnType<typeof setTimeout>>();
-  const callback = useRef(func);
+  const callback = useRef<Function>(func);
 
   const isReady = useCallback(() => ready.current, []);
 
@@ -19,7 +19,6 @@ export const useDebounce = <A extends any[]>(
 
     timeout.current = setTimeout(() => {
       ready.current = true;
-      // @ts-ignore
       callback.current();
     }, delay);
   }, [delay]);
