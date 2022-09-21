@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test --prefix hooks"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Zerfo/zerfo/issues"
   },
-  "homepage": "https://github.com/Zerfo/zerfo#readme"
+  "homepage": "https://github.com/Zerfo/zerfo#readme",
+  "devDependencies": {
+    "husky": "8.0.1"
+  }
 }
