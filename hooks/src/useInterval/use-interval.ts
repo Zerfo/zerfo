@@ -9,6 +9,7 @@ export function useInterval(func: Function, delay?: number | null) {
 
   useEffect(() => {
     if (delay !== null) {
+      // @ts-ignore
       const interval = setInterval(() => savedCallback.current(), delay || 0);
       return () => clearInterval(interval);
     }
