@@ -1,1 +1,1 @@
-export { default as useWidget } from './use-widget';
+export * from './use-widget';

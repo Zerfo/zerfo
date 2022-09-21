@@ -1,1 +1,1 @@
-export { default as useInterval } from './use-interval';
+export * from './use-interval';

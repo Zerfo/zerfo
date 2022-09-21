@@ -1,1 +1,1 @@
-export { default as useTimeout } from './use-timeout';
+export * from './use-timeout';

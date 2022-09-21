@@ -1,1 +1,1 @@
-export { default as useLink } from './use-link';
+export * from './use-link';

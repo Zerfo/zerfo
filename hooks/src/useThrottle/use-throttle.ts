@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export function useThrottle<T, U extends any[]>(func: (...args: U) => T, ms = 200, args: U) {
+export const useThrottle = <T, U extends any[]>(func: (...args: U) => T, ms = 200, args: U) => {
   const [state, setState] = useState<T | null>(null);
   const timeout = useRef<ReturnType<typeof setTimeout>>();
   const nextArgs = useRef<U>();

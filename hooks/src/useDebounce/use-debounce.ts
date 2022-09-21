@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 
-function useDebounce<A extends any[]>(func: (...args: A) => void, delay: number, cleanUp = false) {
+export const useDebounce = <A extends any[]>(func: (...args: A) => void, delay: number, cleanUp = false) => {
   const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   function clearTimer() {
