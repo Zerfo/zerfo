@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "lib": [
+      "es2015"
+    ],
+    "paths": {
+      "@src/*": ["./*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "jest.config.ts", "babel.config.ts"],
+}
